@@ -7,12 +7,14 @@ export const Navbar = () => {
     <div className="navbar">
       {/* links */}
       <div className="links">
-        {/* home */}
+        {/* Home */}
         <Link to="/">Home</Link>
-        {/* new player form */}
+        {/* New Player Form */}
         <Link to="/newplayerform">Add New Player</Link>
-        {/* single player */}
+        {/* Single Player */}
         <Link to="/singleplayer">View Player Details</Link>
+        {/* All Players */}
+        <Link to="/allplayers">View All Players</Link>
       </div>
     </div>
   );
