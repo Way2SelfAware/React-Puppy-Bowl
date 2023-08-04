@@ -1,17 +1,21 @@
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { Navbar } from "./components/navbar";
+import { NewPlayerForm } from "./components/newplayerform";
+import { SinglePlayer } from "./components/singleplayer"; // Corrected import
 
-function App() {
-  const [count, setCount] = useState(0);
-
+export default function App() {
   return (
-    <>
-      <Routes>
-        <div className="navbar">Navbar</div>
-      </Routes>
-    </>
+      <div>
+        <Navbar />
+        <Routes>
+          {/* Home component */}
+          <Route path="/" />
+          {/* CreatePlayerForm component */}
+          <Route path="/CreatePlayerForm" element={<NewPlayerForm />} />
+          {/* SinglePlayer component */}
+          <Route path="/PlayerDetails" element={<SinglePlayer />} />
+        </Routes>
+      </div>
   );
 }
-
-export default App;
