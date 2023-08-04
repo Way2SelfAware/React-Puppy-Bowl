@@ -1,6 +1,17 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 export const NewPlayerForm = () => {
+
+  // add a function to handle file upload
+
+  // do something with file
+
+  // write POST API function
+    // useEffect(()=>{
+
+    // });
+
+
   return (
     <div>
       {/* Page Title */}
