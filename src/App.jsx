@@ -21,6 +21,17 @@ export default function App() {
           <Route path="/allplayers" element={<AllPlayers />} />
         </Routes>
       </div>
+      <div className="homepage">
+        <h1>Welcome to the Puppy Bowl LVII</h1>
+      </div>
+      <div className="team1">
+        <h1>Team 1</h1>
+        <div className="team1card"></div>
+      </div>
+      <div className="team2">
+        <h1>Team 2</h1>
+        <div className="team2card"></div>
+      </div>
     </>
   );
 }
